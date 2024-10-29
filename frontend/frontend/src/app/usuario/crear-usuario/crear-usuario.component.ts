@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { SharedModule } from '../../shared/shared.module';
+
 import { ErrorStateMatcher } from '@angular/material/core';
-import { FormControl, FormGroup, FormGroupDirective, NgForm, ValidationErrors, Validators} from '@angular/forms';
+import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import { SharedModule } from '../../shared/shared.module';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
